@@ -1,0 +1,41 @@
+{
+  "name": "lib-frontend",
+  "version": "0.0.1",
+  "description": "Demo for issue https://github.com/angular/angular/issues/5731",
+  "scripts": {
+    "test": "karma start",
+    "live-test": "karma start --single-run=false --auto-watch=true",
+    "bundle": "jspm bundle angular2/angular2 + angular2/testing .tmp/test-bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frissdiegurke/sorhub-lib-frontend.git"
+  },
+  "author": [
+    "Sven Reglitzki <sreglitzki@googlemail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/frissdiegurke/sorhub-lib-frontend#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.2"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@2.0.0-alpha.50",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "ts": "github:frankwallis/plugin-typescript@^2.4.0",
+      "zone.js": "npm:zone.js@^0.5.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
+}
